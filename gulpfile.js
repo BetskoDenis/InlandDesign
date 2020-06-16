@@ -1,4 +1,4 @@
-var gulp         = require('gulp'),
+var gulp       = require('gulp'),
 	sass         = require('gulp-sass'),
 	browserSync  = require('browser-sync'),
 	concat       = require('gulp-concat'),
@@ -10,10 +10,10 @@ var gulp         = require('gulp'),
 	pngquant     = require('imagemin-pngquant'),
 	cache        = require('gulp-cache'),
 	autoprefixer = require('gulp-autoprefixer'),
+	bourbon      = require('bourbon'),
 	notify		 = require('gulp-notify'),
-	scripts		 = require('scripts'),
-    jade         = require('gulp-jade'),
-	babel 		 = require("gulp-babel");
+	scripts		= require('scripts'),
+	jade         = require('gulp-jade');
 
 gulp.task('sass', function(){
 	return gulp.src('app/sass/**/*.sass')
@@ -44,10 +44,10 @@ gulp.task('browser-sync', function() {
 
 gulp.task('scripts', function() {
 	return gulp.src([
-        'app/libs/owl-carousel/js/owl.carousel-2.min.js',
-        'app/libs/owl-carousel/js/owl.carousel-2.thumbs.min.js',
-        'app/libs/magnific-popup/js/jquery.magnific-popup.min.js'
-		])
+		'app/libs/owl-carousel/js/owl.carousel-2.min.js',
+		'app/libs/owl-carousel/js/owl.carousel-2.thumbs.min.js',
+		'app/libs/magnific-popup/js/jquery.magnific-popup.min.js'
+	])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('app/js'));
@@ -88,31 +88,24 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 	var buildCss = gulp.src([
 		'app/css/**/*.css',
 		'app/css/**/*.min.css'
-		])
-	.pipe(gulp.dest('dist/css'));
+	])
+		.pipe(gulp.dest('dist/css'));
 
 	var buildFonts = gulp.src('app/fonts/**/*')
-	.pipe(gulp.dest('dist/fonts'));
+		.pipe(gulp.dest('dist/fonts'));
 
 	var buildJs = gulp.src('app/js/**/*')
-	.pipe(gulp.dest('dist/js'));
+		.pipe(gulp.dest('dist/js'));
 
 	var buildHtml = gulp.src('app/*.html')
-	.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('dist'));
 
+	var buildLibs = gulp.src('app/libs/**/*')
+		.pipe(gulp.dest('dist/libs'))
 });
-
-
-
 
 gulp.task('clear', function (callback) {
 	return cache.clearAll();
 });
 
 gulp.task('default', ['watch']);
-
-gulp.task("default", function () {
-	return gulp.src("src/app.js")
-		.pipe(babel())
-		.pipe(gulp.dest("dist"));
-});

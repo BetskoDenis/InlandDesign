@@ -2043,6 +2043,12 @@
       <change afterPath="$PROJECT_DIR$/../Udemy/Wordpress/wordpress-5.4-uk/wordpress/wp-trackback.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Udemy/Wordpress/wordpress-5.4-uk/wordpress/xmlrpc.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Udemy/js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/jade/includes/_header.jade" beforeDir="false" afterPath="$PROJECT_DIR$/app/jade/includes/_header.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sass/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/_header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -2077,8 +2083,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/sass/_var.sass">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/app/sass/_header.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -2091,9 +2101,45 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/common.js">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="96" column="41" lean-forward="true" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../BeOnePage/BeOnePage/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="110" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/jade/includes/_header.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/jade/templates/index.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -2112,7 +2158,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -2143,9 +2189,7 @@
         <option value="$PROJECT_DIR$/../nodejs-1st-work-master/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/jade/includes/_section_three.jade" />
         <option value="$PROJECT_DIR$/app/sass/_section_three.sass" />
-        <option value="$PROJECT_DIR$/app/sass/_header.sass" />
         <option value="$PROJECT_DIR$/app/jade/includes/_head.jade" />
-        <option value="$PROJECT_DIR$/app/jade/includes/_header.jade" />
         <option value="$PROJECT_DIR$/app/jade/templates/index.jade" />
         <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/libs/media.css" />
@@ -2155,8 +2199,10 @@
         <option value="$PROJECT_DIR$/app/sass/_var.sass" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/package-lock.json" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/sass/index.sass" />
+        <option value="$PROJECT_DIR$/app/jade/includes/_header.jade" />
+        <option value="$PROJECT_DIR$/app/sass/_header.sass" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
       </list>
     </option>
   </component>
@@ -2172,7 +2218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2180,10 +2225,42 @@
               <item name="InlandDesign" type="b2602c69:ProjectViewProjectNode" />
               <item name="InlandDesign" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="InlandDesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InlandDesign" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InlandDesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InlandDesign" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="jade" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InlandDesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InlandDesign" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="jade" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InlandDesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InlandDesign" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="jade" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InlandDesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InlandDesign" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2193,6 +2270,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\front_end\InlandDesign" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2240,17 +2322,20 @@
       <workItem from="1557558841171" duration="3802000" />
       <workItem from="1557566135852" duration="771000" />
       <workItem from="1592122066188" duration="1972000" />
-      <workItem from="1592159764530" duration="501000" />
+      <workItem from="1592159764530" duration="1117000" />
+      <workItem from="1592232923444" duration="632000" />
+      <workItem from="1592322180759" duration="112000" />
+      <workItem from="1592322308453" duration="929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102108000" />
+    <option name="totallyTimeSpent" value="104397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25479743" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26279318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Gulp" order="3" side_tool="true" />
@@ -2265,7 +2350,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.54462934" visible="true" weight="0.20368364" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.54462934" visible="true" weight="0.3391116" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.45537066" side_tool="true" weight="0.3584288" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -2300,8 +2385,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/css/libs.min.css" />
-    <entry file="file://$PROJECT_DIR$/app/js/comon.js" />
     <entry file="file://$PROJECT_DIR$/../boost/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -2356,7 +2439,6 @@
     <entry file="file://$PROJECT_DIR$/app/sass/_section_nine.sass" />
     <entry file="file://$PROJECT_DIR$/app/sass/_section_four.sass" />
     <entry file="file://$PROJECT_DIR$/app/sass/_section_three.sass" />
-    <entry file="file://$PROJECT_DIR$/app/sass/_header.sass" />
     <entry file="file://$PROJECT_DIR$/app/jade/includes/_section_three.jade" />
     <entry file="file://$PROJECT_DIR$/../nodejs-1st-work-master/app/js/common.js" />
     <entry file="file://$PROJECT_DIR$/../boost/js/script.js">
@@ -2368,16 +2450,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/jade/includes/_head.jade">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jade/includes/_header.jade">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/jade/templates/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/jade/templates/about.jade" />
     <entry file="file://$PROJECT_DIR$/app/libs/media.css">
@@ -2411,16 +2483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/_general.sass">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -2428,7 +2490,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/index.sass">
+    <entry file="file://$PROJECT_DIR$/app/sass/_general.sass">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/_var.sass">
@@ -2440,8 +2502,53 @@
     <entry file="file://$PROJECT_DIR$/app/sass/_footer.sass">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/jade/templates/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/jade/includes/_header.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/index.sass">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/_header.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/common.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BeOnePage/BeOnePage/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="110" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="96" column="41" lean-forward="true" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
