@@ -30,7 +30,8 @@ gulp.task('jade', function() {
 		.pipe(jade({
 			pretty: true
 		}))
-		.pipe(gulp.dest('app/'));
+		.pipe(gulp.dest('app/'))
+		.pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('browser-sync', function() {
@@ -44,8 +45,8 @@ gulp.task('browser-sync', function() {
 
 gulp.task('scripts', function() {
 	return gulp.src([
-		'app/libs/owl-carousel/js/owl.carousel-2.min.js',
-		'app/libs/owl-carousel/js/owl.carousel-2.thumbs.min.js',
+		'app/libs/**/js/*.min.js',
+		'app/libs/**/js/*.thumbs.min.js',
 
 	])
 		.pipe(concat('libs.min.js'))
@@ -53,20 +54,30 @@ gulp.task('scripts', function() {
 		.pipe(gulp.dest('app/js'));
 });
 
-gulp.task('css-libs', ['sass'], function() {
+gulp.task('css-libs', gulp.series('sass'), function() {
 	return gulp.src('app/css/libs.css')
 		.pipe(cssnano()) // Сжимаем
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('app/css'));
 });
 
-gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'jade'], function() {
-	gulp.watch('app/sass/*.sass', ['sass']);
+// gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'jade'], function() {
+// 	gulp.watch('app/sass/**/*.sass', ['sass']);
+// 	gulp.watch('app/*.html', browserSync.reload);
+// 	gulp.watch('app/js/**/*.js', browserSync.reload);
+// 	gulp.watch('app/jade/templates/**/*.jade', ['jade']);
+// 	gulp.watch('app/jade/includes/**/*.jade', ['jade']);
+// });
+
+gulp.task('watch', function() {
+	gulp.watch('app/sass/**/*.sass', gulp.parallel('sass'));
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
-	gulp.watch('app/jade/templates/**/*.jade', ['jade']);
-	gulp.watch('app/jade/includes/**/*.jade', ['jade']);
+	gulp.watch('app/jade/templates/**/*.jade', gulp.parallel('jade'));
+	gulp.watch('app/jade/includes/**/*.jade', gulp.parallel('jade'));
 });
+
+
 
 gulp.task('clean', function() {
 	return del.sync('dist');
@@ -83,7 +94,7 @@ gulp.task('img', function() {
 		.pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
+gulp.task('build', gulp.series('clean', 'img', 'sass', 'scripts'), function() {
 
 	var buildCss = gulp.src([
 		'app/css/**/*.css',
@@ -108,4 +119,6 @@ gulp.task('clear', function (callback) {
 	return cache.clearAll();
 });
 
-gulp.task('default', ['watch']);
+// gulp.task('default', ['watch']);
+
+gulp.task('default', gulp.parallel('jade', 'watch', 'browser-sync', 'css-libs', 'scripts' ));

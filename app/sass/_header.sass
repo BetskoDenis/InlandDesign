@@ -6,20 +6,60 @@
     height: 100%
     width: 60px
     background-color: $bgColorGrey
+    display: flex
+    flex-direction: column
+    justify-content: center
     .social-block
-
+      padding: 15px 0 15px 0
+      display: flex
+      align-items: center
+      flex-direction: column
+      li
+        margin: 5px
+        font-size: 16px
+        a
+          color: rgba(240, 240, 240, 1)
+          transition: color .25s
+        &:hover
+          a
+            color: rgba(198, 164, 126, 1)
     .phone
+      padding: 15px 0 15px 0
+      border-top: 1px solid rgba(240, 240, 240, .1)
+      border-bottom: 1px solid rgba(240, 240, 240, .1)
+      .phone-wrapper
 
-      color: rgba(198, 164, 126, 1)
-      span:first-child
-      span:last-child
+        display: flex
+        justify-content: center
+        span
+          font-size: 16px
+          color: rgba(240, 240, 240, 1)
+          transform: rotate(180deg)
+          writing-mode: vertical-lr
+        span:before
+          color: rgba(198, 164, 126, 1)
+          transform: rotate(-45deg)
+          writing-mode: initial
+          letter-spacing: 2px
+
+    .email
+      padding: 15px 0 15px 0
+      display: flex
+      justify-content: center
+      span
+        font-size: 16px
         color: rgba(240, 240, 240, 1)
         transform: rotate(180deg)
         writing-mode: vertical-lr
-    .email
+      span:before
+        color: rgba(198, 164, 126, 1)
+        writing-mode: initial
+        letter-spacing: 2px
+
   .first-screen-right-block
     background-color: $bgColorBlack
     width: 100%
     .header-wrapper
       display: flex
       width: 100%
+      padding: 30px 15px
