@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Yantramanav';
+    src: local('Yantramanav Medium'), local('Yantramanav-Medium'), url('Yantramanavmedium.woff2') format('woff2'), url('Yantramanavmedium.woff') format('woff'), url('Yantramanavmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Yantramanav';
+    src: local('Yantramanav Thin'), local('Yantramanav-Thin'), url('Yantramanavthin.woff2') format('woff2'), url('Yantramanavthin.woff') format('woff'), url('Yantramanavthin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Yantramanav';
+    src: local('Yantramanav Light'), local('Yantramanav-Light'), url('Yantramanavlight.woff2') format('woff2'), url('Yantramanavlight.woff') format('woff'), url('Yantramanavlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Yantramanav';
+    src: local('Yantramanav Regular'), local('Yantramanav-Regular'), url('Yantramanavregular.woff2') format('woff2'), url('Yantramanavregular.woff') format('woff'), url('Yantramanavregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Yantramanav';
+    src: local('Yantramanav Black'), local('Yantramanav-Black'), url('Yantramanavblack.woff2') format('woff2'), url('Yantramanavblack.woff') format('woff'), url('Yantramanavblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Yantramanav';
+    src: local('Yantramanav Bold Bold'), local('Yantramanav-Bold'), url('Yantramanavboldbold.woff2') format('woff2'), url('Yantramanavboldbold.woff') format('woff'), url('Yantramanavboldbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

@@ -1,2 +1,69 @@
-h1 {
-  color: red; }
+@font-face {
+  font-family: "Yantramanavregular";
+  src: url("../fonts/yantramanav/Yantramanavregular.ttf");
+  src: url("../fonts/yantramanav/Yantramanavregular.woff2");
+  src: url("../fonts/yantramanav/Yantramanavregular.woff"); }
+
+@font-face {
+  font-family: "Yantramanavmedium";
+  src: url("../fonts/yantramanav/Yantramanavmedium.ttf");
+  src: url("../fonts/yantramanav/Yantramanavmedium.woff2");
+  src: url("../fonts/yantramanav/Yantramanavmedium.woff"); }
+
+@font-face {
+  font-family: "Yantramanavboldbold";
+  src: url("../fonts/yantramanav/Yantramanavboldbold.ttf");
+  src: url("../fonts/yantramanav/Yantramanavboldbold.woff2");
+  src: url("../fonts/yantramanav/Yantramanavboldbold.woff"); }
+
+*, :before, :after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: "Yantramanavregular", sans-serif;
+  font-size: 14px;
+  min-width: 320px;
+  overflow-x: hidden; }
+
+.container {
+  max-width: 1300px;
+  padding: 0 -webkit-calc(15px + 2.63vw);
+  padding: 0 calc(15px + 2.63vw);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+.first-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  width: 100%; }
+  .first-section .info-sidebar {
+    height: 100%;
+    width: 60px;
+    background-color: #282d32; }
+    .first-section .info-sidebar .phone {
+      color: #c6a47e; }
+      .first-section .info-sidebar .phone span:last-child {
+        color: #f0f0f0;
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+        -webkit-writing-mode: vertical-lr;
+            -ms-writing-mode: tb-lr;
+                writing-mode: vertical-lr; }
+  .first-section .first-screen-right-block {
+    background-color: #212529;
+    width: 100%; }
+    .first-section .first-screen-right-block .header-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }

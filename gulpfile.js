@@ -46,7 +46,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/owl-carousel/js/owl.carousel-2.min.js',
 		'app/libs/owl-carousel/js/owl.carousel-2.thumbs.min.js',
-		'app/libs/magnific-popup/js/jquery.magnific-popup.min.js'
+
 	])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
@@ -61,7 +61,7 @@ gulp.task('css-libs', ['sass'], function() {
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'jade'], function() {
-	gulp.watch('app/sass/**/*.sass', ['sass']);
+	gulp.watch('app/sass/*.sass', ['sass']);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
 	gulp.watch('app/jade/templates/**/*.jade', ['jade']);
