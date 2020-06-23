@@ -63,3 +63,113 @@
       display: flex
       width: 100%
       padding: 30px 15px
+      justify-content: space-between
+
+      .menu-block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        .header-menu
+          height: 100%
+          ul
+            display: flex
+            height: 100%
+            li
+              height: 100%
+              display: flex
+              align-items: center
+              a
+                position: relative
+                font-family: "Yantramanavmedium", sans-serif
+                text-decoration: none
+                color: rgba(240, 240, 240, 1)
+                text-transform: uppercase
+                margin: 0 calc(5px + 1vw)
+                transition: color .25s
+                text-align: center
+
+                &:after
+                  content: ''
+                  height: 4px
+                  width: 4px
+                  background-color: rgba(198, 164, 126, 1)
+                  position: absolute
+                  top: 50%
+                  right: -20px
+
+              ul
+                width: 180px
+                display: flex
+                flex-direction: column
+                position: absolute
+                top: 100%
+                visibility: hidden
+                opacity: 0
+                transform: translate(80px, 0)
+                transition: all .25s
+                height: auto
+                li
+                  padding: 20px
+                  a
+                    margin: 0
+                  &:not(:last-child)
+                    border-bottom: 1px solid rgba(240, 240, 240, .2)
+              &:hover>a
+                  color: rgba(198, 164, 126, 1)
+              &:hover
+                ul
+                  visibility: visible
+                  opacity: 1
+                  transform: translate(0px, 0)
+            li:last-child>a
+              &:after
+                display: none
+
+      .service-block
+        display: flex
+        .header-search-button
+          color: rgba(240, 240, 240, 1)
+          margin: 0 20px
+          cursor: pointer
+          display: flex
+          align-items: center
+        .cart
+          position: relative
+          font-size: 20px
+          color: rgba(240, 240, 240, 1)
+          padding: 0 20px
+          border-left: 1px solid rgba(240, 240, 240, .2)
+          border-right: 1px solid rgba(240, 240, 240, .2)
+          cursor: pointer
+          display: flex
+          align-items: center
+          span
+            height: 16px
+            width: 16px
+            border-radius: 50%
+            background-color: rgba(198, 164, 126, 1)
+            position: absolute
+            top: -7px
+            right: 7px
+            font-size: 13px
+            line-height: 1.2
+            text-align: center
+            color: $bgColorBlack
+        .authorization-block
+          display: flex
+          align-items: center
+          margin: 0 20px
+          color: rgba(240, 240, 240, 1)
+          span
+            padding: 0 5px
+            cursor: pointer
+            transition: color .25s
+            &:before
+              margin-right: 5px
+            &:hover
+              color: rgba(198, 164, 126, 1)
+
+
+
+
